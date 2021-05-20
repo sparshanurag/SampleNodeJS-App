@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git 'https://github.com/sparshanurag/SampleNodeJS-App'
+                git branch: 'dev', url: 'https://github.com/sparshanurag/SampleNodeJS-App'
             }
         }
          stage('deploy') {
