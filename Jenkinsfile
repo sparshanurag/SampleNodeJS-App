@@ -9,7 +9,7 @@ pipeline {
         }
          stage('deploy') {
             steps {
-                sh "node main.js &"
+                sh "node main.js "
             }
         }
     }
