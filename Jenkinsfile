@@ -1,3 +1,4 @@
+@Library("shared-library") _
 pipeline {
     agent any
 
@@ -9,7 +10,7 @@ pipeline {
         }
          stage('deploy') {
             steps {
-                sh "node main.js "
+                deploy()
             }
         }
     }
