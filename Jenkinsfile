@@ -8,7 +8,7 @@ pipeline {
         }
          stage('deploy') {
             steps {
-                sh "node main.js "
+                deploy()
             }
         }
     }
